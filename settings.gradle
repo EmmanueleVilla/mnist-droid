@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+        maven { url 'https://jitpack.io' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+rootProject.name = "MnistClassifier"
+include ':app'
